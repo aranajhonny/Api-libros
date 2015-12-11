@@ -12,10 +12,10 @@
 */
 
 $app->get('/', function() use ($app) {
-    return "Lumen RESTful API By CoderExample (http://coderexample.com)";
+    return "Lumen RESTful API By @AranaJhonny";
 });
 
-$app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
+$app->group(['prefix' => 'api/','namespace' => 'App\Http\Controllers'], function($app)
 {
     $app->get('book','BookController@index');
  

@@ -44,7 +44,6 @@ class BookController extends Controller{
         $Book  = Book::find($id);
         $Book->title = $request->input('title');
         $Book->author = $request->input('author');
-        $Book->isbn = $request->input('isbn');
         $Book->save();
  
         return response()->json($Book);
